@@ -27,8 +27,15 @@
                     <a href="{{url('dashboard')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <a href="{{url('customer')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Customer</a>
                     <a href="{{url('mentor')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Mentor</a>
-
-
+                    <div class="dropdown">
+                     <a href="{{url('mentor')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Course-NEET</a>
+                     <div class="dropdown-content">
+                      <a href="{{url('mentor')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Subject1</a>
+                     <a href="{{url('mentor')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Subject2</a>
+                     <a href="{{url('mentor')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Subject3</a>
+                    <a href="{{url('mentor')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Subject4</a>
+                </div>
+                </div>
                 </div>
             </nav>
         </div>
