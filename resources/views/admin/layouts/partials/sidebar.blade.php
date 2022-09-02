@@ -28,7 +28,7 @@
                     <a href="{{url('customer')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Customer</a>
                     <a href="{{url('mentor')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Mentor</a>
                     <div class="dropdown">
-                     <a href="{{url('mentor')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Course-NEET</a>
+                     <a href="{{url('subject')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Course-NEET</a>
                      <div class="dropdown-content">
                       <a href="{{url('mentor')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Subject1</a>
                      <a href="{{url('mentor')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Subject2</a>

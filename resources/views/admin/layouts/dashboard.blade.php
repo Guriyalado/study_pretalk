@@ -22,6 +22,7 @@
                             <div class="ms-3">
                                <p class="mb-2">Total Mentor</p></a>
                                 <h6 class="mb-0">
+                                    {{$mentor}}
                                
                                 </h6>
                             </div>
@@ -32,7 +33,7 @@
                            <i class="fa fa-chart-line fa-3x " style="color: blue"></i>
                             <div class="ms-3">
                                 <p class="mb-2">Total Customer</p>
-                                <h6 class="mb-0">  
+                                <h6 class="mb-0">  {{$customer}}
                                 </h6>
                             </div>
                         </div>

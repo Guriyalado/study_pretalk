@@ -1,6 +1,6 @@
 @extends('admin.layouts.admin')
 @section('title')
-    {{ 'study - Mentor' }}
+    {{ 'study - Subject' }}
 @endsection
 @section('body')
 <div class="container-fluid pt-4 px-4">

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Admin\Customer\CustomerController;
 use App\Http\Controllers\Admin\Mentor\MentorController;
+use App\Http\Controllers\Admin\Subject\SubjectController;
 
 use App\Http\Controllers\Admin\Dashboard\DashboardController;
 
@@ -32,6 +33,7 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
 Route::get('dashboard',[DashboardController::class,'index']);
 Route::resource('customer', CustomerController::class);
 Route::resource('mentor', MentorController::class);
+Route::resource('subject', SubjectController::class);
 
 });
 

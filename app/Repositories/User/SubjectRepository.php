@@ -36,7 +36,7 @@ class SubjectRepository
             // $customer->customer_id=$auth->id;
             
             
-            $mentor->save();
+            $subject->save();
 
             if (request()->ajax()) {
                 $output = [
@@ -62,14 +62,14 @@ class SubjectRepository
      public function update($id)
     {
         try {
-            $subject= Mentor::findOrFail($id);
-             $subject= new Subject();
+            $subject= Subject::findOrFail($id);
+            
             $subject->subject_name= request()->subject_name;
             $subject->Credit= request()->Credit;
             $subject->passing_marks= request()->passing_marks;
              
             
-            $mentor->save();
+            $subject->save();
             
 
 
