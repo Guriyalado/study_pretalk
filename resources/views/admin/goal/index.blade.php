@@ -1,18 +1,18 @@
 @extends('admin.layouts.admin')
 @section('title')
-    {{ 'study - Student' }}
+    {{ 'study - Goal' }}
 @endsection
 @section('body')
 <div class="container-fluid pt-4 px-4">
     <div class="row page-titles">
     {{-- <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor">Student</h4>
+            <h4 class="text-themecolor">Goal</h4>
         </div>--}}
         <div class="col-md-12 align-self-end text-right">
             <div class="d-flex justify-content-end align-items-center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{ url('dashboard') }}">Home</a></li>
-                    <li class="breadcrumb-item active">Student</li>
+                    <li class="breadcrumb-item active">Goal</li>
                 </ol>
             </div>
         </div>
@@ -21,10 +21,10 @@
         <div class="col-sm-12">
             <div class="bg-secondary rounded h-100 p-4">
                 <div class="card-header modal-header d-flex align-items-center justify-content-between">
-                    <h3 class="mb-0">Student</h3>
+                    <h3 class="mb-0">Goal</h3>
 
                     <button type="button" class="btn btn-primary btn-modal waves-effect waves-light"
-                        data-href="{{ action('App\Http\Controllers\Admin\Customer\CustomerController@create') }}"
+                        data-href="{{ action('App\Http\Controllers\Admin\Goal\GoalController@create') }}"
                         data-container="">
                         <i class="fa fa-plus"></i> Add
                     </button>
@@ -35,12 +35,16 @@
                         <table id="data_table" class="table table-dark table-striped table-bordered nowrap">
                             <thead>
                                 <tr>
-                                    <th id="name">Name</th>
-                                    <th id="name">Email</th>
-                                    <th id="name">Phone</th>
+                                    <th id="name">Title</th>
+                                    <th id="name">Body</th>
+                                    <th id="name">Subject Name</th>
+                                    
+                                    
+                                   
+                                    
 
 
-                                    <th id="action">Action</th>
+                                    
                                 </tr>
                             </thead>
                         </table>
@@ -57,16 +61,16 @@
 <script>
            var columns= [
                 {
-                    data: 'name',
-                    name: 'name'
+                    data: 'title',
+                    name: 'title'
                 },
                 {
-                    data: 'email',
-                    name: 'email'
+                    data: 'body',
+                    name: 'body'
                 },
                 {
-                    data: 'phone',
-                    name: 'phone'
+                    data: 'subject_name',
+                    name: 'subject_name'
                 },
 
                  {

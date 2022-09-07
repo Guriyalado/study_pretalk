@@ -25,17 +25,19 @@
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="{{url('dashboard')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                    <a href="{{url('customer')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Customer</a>
-                    <a href="{{url('mentor')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Mentor</a>
-                    <div class="dropdown">
-                     <a href="{{url('subject')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Course-NEET</a>
-                     <div class="dropdown-content">
-                      <a href="{{url('mentor')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Subject1</a>
-                     <a href="{{url('mentor')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Subject2</a>
-                     <a href="{{url('mentor')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Subject3</a>
-                    <a href="{{url('mentor')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Subject4</a>
-                </div>
-                </div>
+                    <a href="{{url('customer')}}" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Student</a>
+                    <a href="{{url('mentor')}}" class="nav-item nav-link"> <i class="fa fa-user me-2"></i>Mentor</a>
+                    
+                     <a href="{{url('subject')}}" class="nav-item nav-link"><i class="fa fa-address-book"></i>
+                       
+                     Course-NEET</a>
+
+                     
+                 <a href="{{url('activity')}}" class="nav-item nav-link"><i class="fa fa-play-circle"></i>
+                       
+                     Activity</a>
+                     <a href="{{url('goal')}}" class="nav-item nav-link"><i class="fa-light fa-bullseye"></i>
+                      Goal</a>
                 </div>
             </nav>
         </div>

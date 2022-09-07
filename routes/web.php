@@ -5,6 +5,8 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Admin\Customer\CustomerController;
 use App\Http\Controllers\Admin\Mentor\MentorController;
 use App\Http\Controllers\Admin\Subject\SubjectController;
+use App\Http\Controllers\Admin\Activity\ActivityController;
+use App\Http\Controllers\Admin\Goal\GoalController;
 
 use App\Http\Controllers\Admin\Dashboard\DashboardController;
 
@@ -34,6 +36,8 @@ Route::get('dashboard',[DashboardController::class,'index']);
 Route::resource('customer', CustomerController::class);
 Route::resource('mentor', MentorController::class);
 Route::resource('subject', SubjectController::class);
+Route::resource('activity', ActivityController::class);
+Route::resource('goal', GoalController::class);
 
 });
 
