@@ -3,27 +3,29 @@
   <div class="form-row mb-4">
      <div class="form-group col-md-12">
          {!! Form::label('Title:') !!}
-         {!! Form::text('title', $goal->title ?? '', ['class' => 'form-control']) !!}
+         {!! Form::text('title', $pregoal->title ?? '', ['class' => 'form-control']) !!}
          <span class="md-line" id="name_error"></span>
      </div>
      <div class="form-group col-md-12">
         {{ Form::label('Body: *', null, ['class' => 'label text-black']) }}
-        {!! Form::text('body', $goal->body?? '', ['class' => 'form-control', 'name' => 'body', 'id' => 'body']) !!}
+        {!! Form::text('body', $pregoal->body?? '', ['class' => 'form-control', 'name' => 'body', 'id' => 'body']) !!}
 
     </div>
     <div class="form-group col-md-12">
-            {!! Form::label('Subject Name :') !!}
-            {!! Form::select('subject_name', $subject,$goal->subject_name ?? '', ['class' => 'form-control']) !!}
+           {!! Form::label('Subject Name:') !!}
+         {!! Form::text('subject_name', $pregoal->subject_name ?? '', ['class' => 'form-control']) !!}
             <span class="md-line" id="name_error"></span>
         </div>
     <div class="form-group col-md-12">
         {{ Form::label('Time: *', null, ['class' => 'label text-black']) }}
-        {!! Form::time('time', $goal->time?? '', ['class' => 'form-control', 'name' => 'time', 'id' => 'time']) !!}
+        {!! Form::time('time', $pregoal->time?? '', ['class' => 'form-control', 'name' => 'time', 'id' => 'time']) !!}
 
     </div>
     <div class="form-group col-md-12">
-            {!! Form::label('Credit :') !!}
-            {!! Form::select('Credit', $subject,$goal->credit ?? '', ['class' => 'form-control']) !!}
+         {{ Form::label('Credit: *', null, ['class' => 'label text-black']) }}
+        {!! Form::text('Credit', $pregoal->Credit?? '', ['class' => 'form-control', 'name' => 'Credit', 'id' => 'Credit']) !!}
+
+           
             <span class="md-line" id="name_error"></span>
         </div>
     

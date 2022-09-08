@@ -7,6 +7,8 @@ use App\Http\Controllers\Admin\Mentor\MentorController;
 use App\Http\Controllers\Admin\Subject\SubjectController;
 use App\Http\Controllers\Admin\Activity\ActivityController;
 use App\Http\Controllers\Admin\Goal\GoalController;
+use App\Http\Controllers\Admin\Presetgoal\PresetgoalController;
+use App\Http\Controllers\Admin\Pregoal\PregoalController;
 
 use App\Http\Controllers\Admin\Dashboard\DashboardController;
 
@@ -38,6 +40,8 @@ Route::resource('mentor', MentorController::class);
 Route::resource('subject', SubjectController::class);
 Route::resource('activity', ActivityController::class);
 Route::resource('goal', GoalController::class);
+Route::resource('presetgoal',PresetgoalController::class);
+Route::resource('pregoal',PregoalController::class);
 
 });
 

@@ -38,6 +38,11 @@
                      Activity</a>
                      <a href="{{url('goal')}}" class="nav-item nav-link"><i class="fa-light fa-bullseye"></i>
                       Goal</a>
+
+                       <a href="{{url('presetgoal')}}" class="nav-item nav-link"><i class="fa-light fa-bullseye"></i>
+                     Presetgoal</a>
+                     <a href="{{url('pregoal')}}" class="nav-item nav-link"><i class="fa-light fa-bullseye"></i>
+                     Pregoal</a>
                 </div>
             </nav>
         </div>

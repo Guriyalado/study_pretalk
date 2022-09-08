@@ -6,6 +6,7 @@ use App\Http\Controllers\Api\AuthCustomer\AuthCustomerController;
 use App\Http\Controllers\Api\Subject\SubjectController;
 use App\Http\Controllers\Api\Activity\ActivityController;
 use App\Http\Controllers\Api\Goal\GoalController;
+use App\Http\Controllers\Api\Presetgoal\PresetgoalController;
 
 
 
@@ -41,6 +42,8 @@ Route::post('getactivity',[ActivityController::class,'index']);
 Route::resource('activity',ActivityController::class);
 Route::post('getgoal',[GoalController::class,'index']);
 Route::resource('goal',GoalController::class);
+Route::post('getpresetgoal',[PresetgoalController::class,'index']);
+Route::resource('presetgoal',PresetgoalController::class);
 
 
 });
