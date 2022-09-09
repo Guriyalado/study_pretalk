@@ -15,13 +15,13 @@ class CreateGoalsTable extends Migration
     {
         Schema::create('goals', function (Blueprint $table) {
             $table->id();
-             $table->string('title');
+             $table->string('title'); 
             $table->string('body');
-            $table->bigInteger('subject_name')->unsigned();
-            $table->foreign('subject_name')->references('id')->on('subjects')->onDelete('cascade');
+            $table->unsignedBigInteger('subject_name')->unsigned();
+            $table->foreign('subject_name')->references('subject_name')->on('subjects');
             $table->time('time');
-           $table->bigInteger('Credit')->unsigned();
-            $table->foreign('Credit')->references('id')->on('subjects')->onDelete('cascade');
+            $table->unsignedBigInteger('Credit')->unsigned();
+            $table->foreign('Credit')->references('Credit')->on('subjects');
             $table->timestamps();
         });
     }
